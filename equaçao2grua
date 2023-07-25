@@ -1,0 +1,18 @@
+import math
+from math import sqrt
+
+a = int(input("informe valor de delta: "))
+b = int(input("agora,informe o valor de b: "))
+c = int(input("escreva o valor de c: "))
+
+def delta(a,b,c):
+  return (b**2) - 4 * a * c
+valor = delta(a,b,c)
+print("valor de delta: ",valor)
+
+if valor >= 1:
+  x1 = (-b+sqrt(valor))/2*a
+  x2 = (-b-sqrt(valor))/2*a
+
+else:
+  print("para delta igual a menor que 1 ,nao existe raizes reais: ")
